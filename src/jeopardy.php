@@ -59,6 +59,7 @@
 
         </table>
     </div>
+
     <div class = "input">
         <h1>Choose Category and the Price</h1>
         <form action = "question.php" method = "POST">
@@ -84,78 +85,253 @@
         <?php
             if($_SESSION["answered"] ==1){
                 if(strcmp($_POST["value"], "Alan Turing") ==0){
+                    echo "
+                    <style>
+                        table tr:nth-child(2) td:nth-child(1) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 } else if(strcmp($_POST["value"], "tabs") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(3) td:nth-child(1) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Windows") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(4) td:nth-child(1) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Interface Manager") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(5) td:nth-child(1) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Pong") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(6) td:nth-child(1) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "James Naysmith") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(2) td:nth-child(2) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Tom Brady") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(3) td:nth-child(2) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Michigan") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(4) td:nth-child(2) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Harvard Yale boat race") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(5) td:nth-child(2) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Brazil") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(6) td:nth-child(2) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Aztec") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(2) td:nth-child(3) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "2550 BC") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(3) td:nth-child(3) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Wei Boyang") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(4) td:nth-child(3) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "James VI") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(5) td:nth-child(3) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "May 29 1453") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(6) td:nth-child(3) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Kelly Clarkson") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(2) td:nth-child(4) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "South Park") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(3) td:nth-child(4) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "The Andy Griffith Show") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(4) td:nth-child(4) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Baby Shark Dance") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(5) td:nth-child(4) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "T-Series") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(6) td:nth-child(4) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Aniken Skywalker") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(2) td:nth-child(5) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "barad-dur") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(3) td:nth-child(5) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Gotham") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(4) td:nth-child(5) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "The Wizard of oz") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(5) td:nth-child(5) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else if(strcmp($_POST["value"], "Stephen Speilberg") ==0){
+					echo "
+                    <style>
+                        table tr:nth-child(6) td:nth-child(5) { 
+                            background: white;
+                        }
+                    </style>
+                    ";
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
                 }else{
