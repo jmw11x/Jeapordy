@@ -86,110 +86,135 @@
                 if(strcmp($_POST["value"], "Alan Turing") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][0][0] = 1;
                 } else if(strcmp($_POST["value"], "tabs") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][0][1] = 1;
                 }else if(strcmp($_POST["value"], "Windows") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][0][2] = 1;
                 }else if(strcmp($_POST["value"], "Interface Manager") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][0][3] = 1;
                 }else if(strcmp($_POST["value"], "Pong") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][0][4] = 1;
                 }else if(strcmp($_POST["value"], "James Naysmith") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][1][0] = 1;
                 }else if(strcmp($_POST["value"], "Tom Brady") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][1][1] = 1;
                 }else if(strcmp($_POST["value"], "Michigan") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][1][2] = 1;
                 }else if(strcmp($_POST["value"], "Harvard Yale boat race") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][1][3] = 1;
                 }else if(strcmp($_POST["value"], "Brazil") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][1][4] = 1;
                 }else if(strcmp($_POST["value"], "Aztec") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][2][0] = 1;
                 }else if(strcmp($_POST["value"], "2550 BC") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][2][1] = 1;
                 }else if(strcmp($_POST["value"], "Wei Boyang") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][2][2] = 1;
                 }else if(strcmp($_POST["value"], "James VI") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][2][3] = 1;
                 }else if(strcmp($_POST["value"], "May 29 1453") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][2][4] = 1;
                 }else if(strcmp($_POST["value"], "Kelly Clarkson") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][3][0] = 1;
                 }else if(strcmp($_POST["value"], "South Park") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][3][1] = 1;
                 }else if(strcmp($_POST["value"], "The Andy Griffith Show") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][3][2] = 1;
                 }else if(strcmp($_POST["value"], "Baby Shark Dance") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][3][3] = 1;
                 }else if(strcmp($_POST["value"], "T-Series") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][3][4] = 1;
                 }else if(strcmp($_POST["value"], "Aniken Skywalker") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][4][0] = 1;
                 }else if(strcmp($_POST["value"], "barad-dur") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][4][1] = 1;
                 }else if(strcmp($_POST["value"], "Gotham") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][4][2] = 1;
                 }else if(strcmp($_POST["value"], "The Wizard of oz") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][4][3] = 1;
                 }else if(strcmp($_POST["value"], "Stephen Speilberg") ==0){
                     $_SESSION["score"] += $_SESSION["lastScore"];
                     echo "Your score is: " . $_SESSION["score"] . "\n";
-                    $_SESSION["visitedArray"][4][4] = 1;
                 }else{
                     echo "SCORE: " . $_SESSION["score"] ."\n";
                 }
             }else{
                 echo "SCORE: " . $_SESSION["score"] ."\n";
             }
-            
+            if(strcmp($_SESSION["lastScore"],"400") ==0 && strcmp($_SESSION["lastCategory"], "CS") ==0){
+                $_SESSION["visitedArray"][0][0] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"800") ==0 && strcmp($_SESSION["lastCategory"], "CS") ==0){
+                $_SESSION["visitedArray"][0][1] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1200") ==0 && strcmp($_SESSION["lastCategory"], "CS") ==0){
+                $_SESSION["visitedArray"][0][2] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1600") ==0 && strcmp($_SESSION["lastCategory"], "CS") ==0){
+                $_SESSION["visitedArray"][0][3] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"2000") ==0 && strcmp($_SESSION["lastCategory"], "CS") ==0){
+                $_SESSION["visitedArray"][0][4] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"400") ==0 && strcmp($_SESSION["lastCategory"], "sports") ==0){
+                $_SESSION["visitedArray"][1][0] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"800") ==0 && strcmp($_SESSION["lastCategory"], "sports") ==0){
+                $_SESSION["visitedArray"][1][1] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1200") ==0 && strcmp($_SESSION["lastCategory"], "sports") ==0){
+                $_SESSION["visitedArray"][1][2] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1600") ==0 && strcmp($_SESSION["lastCategory"], "sports") ==0){
+                $_SESSION["visitedArray"][1][3] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"2000") ==0 && strcmp($_SESSION["lastCategory"], "sports") ==0){
+                $_SESSION["visitedArray"][1][4] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"400") ==0 && strcmp($_SESSION["lastCategory"], "world") ==0){
+                $_SESSION["visitedArray"][2][0] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"800") ==0 && strcmp($_SESSION["lastCategory"], "world") ==0){
+                $_SESSION["visitedArray"][2][1] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1200") ==0 && strcmp($_SESSION["lastCategory"], "world") ==0){
+                $_SESSION["visitedArray"][2][2] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1600") ==0 && strcmp($_SESSION["lastCategory"], "world") ==0){
+                $_SESSION["visitedArray"][2][3] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"2000") ==0 && strcmp($_SESSION["lastCategory"], "world") ==0){
+                $_SESSION["visitedArray"][2][4] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"400") ==0 && strcmp($_SESSION["lastCategory"], "culture") ==0){
+                $_SESSION["visitedArray"][3][0] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"800") ==0 && strcmp($_SESSION["lastCategory"], "culture") ==0){
+                $_SESSION["visitedArray"][3][1] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1200") ==0 && strcmp($_SESSION["lastCategory"], "culture") ==0){
+                $_SESSION["visitedArray"][3][2] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1600") ==0 && strcmp($_SESSION["lastCategory"], "culture") ==0){
+                $_SESSION["visitedArray"][3][3] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"2000") ==0 && strcmp($_SESSION["lastCategory"], "culture") ==0){
+                $_SESSION["visitedArray"][3][4] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"400") ==0 && strcmp($_SESSION["lastCategory"], "movies") ==0){
+                $_SESSION["visitedArray"][4][0] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"800") ==0 && strcmp($_SESSION["lastCategory"], "movies") ==0){
+                $_SESSION["visitedArray"][4][1] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1200") ==0 && strcmp($_SESSION["lastCategory"], "movies") ==0){
+                $_SESSION["visitedArray"][4][2] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"1600") ==0 && strcmp($_SESSION["lastCategory"], "movies") ==0){
+                $_SESSION["visitedArray"][4][3] = 1;
+            }else if(strcmp($_SESSION["lastScore"],"2000") ==0 && strcmp($_SESSION["lastCategory"], "movies") ==0){
+                $_SESSION["visitedArray"][4][4] = 1;
+            }
             // j is tr, i is
             for($i = 0; $i<5; $i++){
                 for($j=0;$j<5;$j++){
@@ -199,7 +224,7 @@
                         echo "
                     <style>
                         table tr:nth-child($row) td:nth-child($col) { 
-                            background: white;
+                            color: blue;
                         }
                     </style>
                     ";
