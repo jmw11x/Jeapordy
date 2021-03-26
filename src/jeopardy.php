@@ -2,14 +2,13 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeapordy</title>
     <link rel = "stylesheet" href ="style.css" type = "text/css">
-
 </head>
 <body class="body2">
 

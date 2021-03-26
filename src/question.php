@@ -2,7 +2,7 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,7 +73,7 @@
         ?>
     </div>
     <form action="jeopardy.php" method = "POST">
-        <input type="text" name="value" id="">
+        <input type="text" name="value" id="userguess">
         <input type="submit" value="Submit answer">
     </form>
 

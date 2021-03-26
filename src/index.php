@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,20 +22,18 @@
   <h1> Jeopardy Login </h1>
 
   <form action="login.php" method="POST">
-    <label for="fname"> Username: </label>
-    <input class= "box1"type="text" name="username" maxlength = "15" placeholder = "username">
-    <br><br>
-    <label for="lname">Password:</label>
-    <input class= "box1" type="text" name="password" maxlength = "15" placeholder = "password">
+    <label for="username"> Username: </label>
+    <input class= "box1" id = "username" type="text" name="username" maxlength = "15" placeholder = "username"/>
+    <br/><br/>
+    <label for="password">Password:</label>
+    <input class= "box1" id = "password" type= "text" name= "password" maxlength = "15" placeholder = "password"/>
     <br><br>
     <input class = "button1" type="submit" value="Login">
   </form>
 
   <br>
-  <a href = "register.php">
+  <form action = "register.php">
     <input class= "button1" type = "submit" name = "register" value = "Register">
-  </a>
-
-  <div>
+  </form>
 </body>
 </html>
