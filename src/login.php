@@ -24,7 +24,9 @@
       foreach($file as $line){
         $arr = explode(",", $line);
         if(strcmp($username,$arr[0]) == 0 && strcmp($password, $arr[1])){
-           echo '<a href="jeopardy.php">LETSPLAY</a>';        
+           echo '<form action = "jeopardy.php">
+           <input class= "button1" type = "submit" name = "register" value = "LETS PLAY!">
+         </form>';        
         }
       }
     }
