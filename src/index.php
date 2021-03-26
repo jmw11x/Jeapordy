@@ -18,6 +18,13 @@
        $_SESSION["lastCategory"] = "";
        $_SESSION["answered"] =0;
        $_SESSION["guesses"] = 0;
+       $_SESSION["visitedArray"] = array(
+         array(0,0,0,0,0),
+         array(0,0,0,0,0),
+         array(0,0,0,0,0),
+         array(0,0,0,0,0),
+         array(0,0,0,0,0)
+       );
   ?>
   <h1> Jeopardy Login </h1>
 
